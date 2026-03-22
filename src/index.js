@@ -1,12 +1,12 @@
 //require('dotenv').config({path:'./env'})
-
+import express from "express";
 import dotenv from "dotenv"
 import connectDb from "./db/db.index.js";
 
 
 
-dotenv.config({path:"./env"})
-
+dotenv.config({path:"./.env"})
+const app = express();
 connectDb()
 .then(()=>{
 
